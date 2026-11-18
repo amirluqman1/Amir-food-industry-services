@@ -31,3 +31,9 @@ Laman tidak memerlukan pemasangan atau build. Dalam **Settings → Pages**, pili
 
 - `favicon-32.png`: ikon tab pelayar. `apple-touch-icon.png`: ikon bila laman disimpan ke skrin utama iPhone.
 - `og-image.jpg` (1200×630): gambar yang keluar bila pautan dikongsi di WhatsApp, Facebook dan lain-lain. Tag `og:*` dalam `<head>` guna URL penuh laman; kalau alamat laman bertukar (contoh: domain sendiri), kemas kini URL tersebut.
+
+## Dokumen pendaftaran (kemas kini berkala)
+
+- **TCC (Sijil Pematuhan Cukai)** diperbaharui setiap tahun. Sijil semasa luput 31/12/2026. Bila TCC baru dapat, semak ayat dalam `services.paragraph.4` masih tepat.
+- **MOF** sah hingga 14/10/2029. Tahun dalam `services.paragraph.4` ("hingga 2029") perlu dikemas kini bila diperbaharui.
+- Jangan letak dokumen asal (SSM, MOF, TCC) dalam repo ini: repo awam dan dokumen tersebut mengandungi maklumat peribadi.
