@@ -26,3 +26,8 @@ Label pembaca skrin dan pautan langkau kandungan kekal untuk aksesibiliti.
 ## GitHub Pages
 
 Laman tidak memerlukan pemasangan atau build. Dalam **Settings → Pages**, pilih **Deploy from a branch**, cawangan **main** dan folder **/(root)**, kemudian simpan. `index.html` mesti kekal di root repo. Fail `.nojekyll` mengekalkan penerbitan HTML statik.
+
+## Ikon dan pratonton pautan
+
+- `favicon-32.png`: ikon tab pelayar. `apple-touch-icon.png`: ikon bila laman disimpan ke skrin utama iPhone.
+- `og-image.jpg` (1200×630): gambar yang keluar bila pautan dikongsi di WhatsApp, Facebook dan lain-lain. Tag `og:*` dalam `<head>` guna URL penuh laman; kalau alamat laman bertukar (contoh: domain sendiri), kemas kini URL tersebut.
