@@ -1,6 +1,8 @@
 # Amir Food Industry Services
 
-Rangka website satu fail, berdasarkan susunan, font Onest, grid rem adaptif, spacing, warna dan animasi laman rujukan. Identiti A.F.I.S, watermark AMIRFOOD, logo yang dibekalkan dan tagline loader sudah diisi. Gambar hero, penerangan syarikat, pautan sosial, statistik dan bahagian kandungan seterusnya masih kosong. Headline dan subheadline yang dibekalkan disimpan dalam `CONTENT.brand.headline` dan `CONTENT.brand.subheadline` untuk bahagian hero kemudian.
+Rangka website satu fail untuk A.F.I.S. Kandungan syarikat (hero, tentang kami, projek, servis, statistik, footer dan borang) sudah diisi. Yang masih kosong: gambar hero (`IMAGES.heroBase` dan `IMAGES.heroReveal`).
+
+Borang "Dapatkan Sebut Harga" membuka WhatsApp dengan mesej siap ditaip ke nombor dalam `const WHATSAPP`. Angka statistik ada dalam `COUNT_TARGETS`.
 
 ## Kandungan yang boleh diisi kemudian
 
@@ -19,7 +21,7 @@ Nilai yang belum diputuskan kekal sebagai `""`. Ruang perkataan kosong mengekalk
 
 Isi URL gambar hero dalam `IMAGES.heroBase` dan `IMAGES.heroReveal`. Logo asal telah dibenam sebagai data URI dalam `IMAGES.brandMark` supaya laman kekal satu fail HTML. `heroAlt` untuk penerangan aksesibiliti gambar utama. Tiada gambar dimuat turun selagi URL kosong; kanvas berus hanya berjalan apabila kedua-dua gambar hero diisi. Jangan letak `src=""` pada imej.
 
-Label pembaca skrin dan pautan langkau kandungan kekal untuk aksesibiliti. Nombor loader 000–100 dan ikon kawalan ialah sebahagian interaksi, bukan kandungan syarikat. Borang masih simulasi sahaja: tiada permintaan dihantar ke pelayan.
+Label pembaca skrin dan pautan langkau kandungan kekal untuk aksesibiliti.
 
 ## GitHub Pages
 
