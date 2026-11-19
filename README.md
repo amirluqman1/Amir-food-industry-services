@@ -43,6 +43,6 @@ Laman tidak memerlukan pemasangan atau build. Dalam **Settings → Pages**, pili
 - `img/hero-bufet.jpg`: gambar hero (dipasang dalam `IMAGES.heroBase`). Lapisan gelap atas gambar diatur dalam CSS bertanda "Gambar hero".
 - `img/hero-vip.jpg`: versi "VIP" yang terdedah bila mouse digerakkan atas hero (efek berus, `IMAGES.heroReveal`). Dijana AI, kemudian dijajarkan dengan `hero-bufet.jpg`; tepi atas dan bawah kekal gambar asal. Efek ini hanya berfungsi dengan mouse (desktop).
 - `img/kantin-mfs.jpg`: latar kad projek "MFS Technology" (kantin kilang).
-- `img/kantin-smk.jpg`: latar kad projek "SMK Seri Bemban". Muka pelajar dikaburkan (bawah umur); jangan ganti dengan versi asal tanpa kebenaran sekolah.
+- `img/kantin-smk.jpg`: latar kad projek "SMK Seri Bemban". Muka pelajar yang jelas dikaburkan satu per satu (bawah umur); jangan ganti dengan versi asal tanpa kebenaran sekolah.
 - `img/makanan-packing.jpg`: latar kad projek "Makanan Packing".
 - Gambar dikecilkan (~1200px) dan data EXIF (termasuk lokasi GPS) dibuang sebelum dimasukkan. Buat perkara sama untuk gambar baru.
