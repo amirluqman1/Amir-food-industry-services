@@ -45,5 +45,6 @@ Laman tidak memerlukan pemasangan atau build. Dalam **Settings → Pages**, pili
 - `img/kantin-mfs.jpg`: latar kad projek "MFS Technology" (kantin kilang).
 - `img/kantin-smk.jpg`: latar kad projek "SMK Seri Bemban". Muka pelajar yang jelas dikaburkan satu per satu (bawah umur); jangan ganti dengan versi asal tanpa kebenaran sekolah.
 - `img/permulaan-gerai.jpg`: gambar gerai No. 26 (permulaan A.F.I.S; gerai di sebelah kanan gambar. Kedai kiri, Desa Food No. 27, bukan milik A.F.I.S) dalam bahagian Tentang Kami.
+- `img/event-utem.jpg`: latar kad projek "UTeM Melaka" (event sup daging 7,000 pax).
 - `img/makanan-packing.jpg`: latar kad projek "Makanan Packing".
 - Gambar dikecilkan (~1200px) dan data EXIF (termasuk lokasi GPS) dibuang sebelum dimasukkan. Buat perkara sama untuk gambar baru.
