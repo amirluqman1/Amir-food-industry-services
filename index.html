@@ -134,6 +134,7 @@ header .brand,header nav button{color:#fff}
 .origin-photo{margin:1.5rem 0 0;max-width:30rem}
 .origin-photo img{width:100%;height:auto;border-radius:1.25rem;box-shadow:0 20px 40px -24px rgba(10,10,10,.45)}
 .origin-photo figcaption{margin-top:.75rem;font-size:.875rem;color:rgba(17,17,17,.6)}
+.card-tile.has-photo{background-size:cover;background-position:center;transition:background-image .3s}.card-tile.has-photo .image-slot{display:none}
 </style>
 </head>
 <body>
@@ -368,7 +369,12 @@ function tickClock(){const now=new Date(),tz={timeZone:'Asia/Kuala_Lumpur'};cons
 tickClock();setInterval(tickClock,15000);
 // Carousel, including keyboard access to the whole card.
 const slides=[1,2,3].map(i=>({caption:CONTENT['carousel.'+i+'.caption'],title:CONTENT['carousel.'+i+'.title']}));let slide=0,carouselBusy=false;
-async function changeSlide(step){if(carouselBusy)return;carouselBusy=true;const content=document.getElementById('carousel-content');const duration=reduced?0:180;await content.animate([{opacity:1,transform:'translateY(0)'},{opacity:0,transform:`translateY(${-Math.sign(step)*14}px)`}],{duration,fill:'forwards',easing:'ease-in'}).finished;slide=(slide+step+slides.length)%slides.length;if(slides[slide].caption)content.querySelector('p').textContent=slides[slide].caption;else if(content.querySelector('p').textContent.trim())content.querySelector('p').textContent='';if(slides[slide].title)content.querySelector('h3').textContent=slides[slide].title;else if(content.querySelector('h3').textContent.trim())content.querySelector('h3').textContent='';document.querySelectorAll('.dots i').forEach((d,i)=>d.classList.toggle('active',i===slide));await content.animate([{opacity:0,transform:`translateY(${Math.sign(step)*14}px)`},{opacity:1,transform:'translateY(0)'}],{duration:reduced?0:400,fill:'forwards',easing:'cubic-bezier(.16,1,.3,1)'}).finished;carouselBusy=false}
+const SLIDE_IMAGES=['img/kantin-mfs.jpg','img/event-utem.jpg','img/kantin-smk.jpg']; // ikut susunan carousel.1–3
+const cardTile=document.querySelector('.card-tile');SLIDE_IMAGES.forEach(u=>{const i=new Image();i.src=u});
+function setCardTile(){const u=SLIDE_IMAGES[slide];cardTile.classList.toggle('has-photo',!!u);cardTile.style.backgroundImage=u?`url(${u})`:''}
+setCardTile();
+
+async function changeSlide(step){if(carouselBusy)return;carouselBusy=true;const content=document.getElementById('carousel-content');const duration=reduced?0:180;await content.animate([{opacity:1,transform:'translateY(0)'},{opacity:0,transform:`translateY(${-Math.sign(step)*14}px)`}],{duration,fill:'forwards',easing:'ease-in'}).finished;slide=(slide+step+slides.length)%slides.length;setCardTile();if(slides[slide].caption)content.querySelector('p').textContent=slides[slide].caption;else if(content.querySelector('p').textContent.trim())content.querySelector('p').textContent='';if(slides[slide].title)content.querySelector('h3').textContent=slides[slide].title;else if(content.querySelector('h3').textContent.trim())content.querySelector('h3').textContent='';document.querySelectorAll('.dots i').forEach((d,i)=>d.classList.toggle('active',i===slide));await content.animate([{opacity:0,transform:`translateY(${Math.sign(step)*14}px)`},{opacity:1,transform:'translateY(0)'}],{duration:reduced?0:400,fill:'forwards',easing:'cubic-bezier(.16,1,.3,1)'}).finished;carouselBusy=false}
 document.querySelector('.card-click').addEventListener('click',()=>changeSlide(1));document.querySelector('.card-click').addEventListener('keydown',e=>{if(e.target===e.currentTarget&&(e.key==='Enter'||e.key===' ')){e.preventDefault();changeSlide(1)}});
 document.getElementById('prev-card').addEventListener('click',e=>{e.stopPropagation();changeSlide(-1)});document.getElementById('next-card').addEventListener('click',e=>{e.stopPropagation();changeSlide(1)});
 // Overlay lifecycle and focus management.
