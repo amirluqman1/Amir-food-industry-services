@@ -37,3 +37,9 @@ Laman tidak memerlukan pemasangan atau build. Dalam **Settings → Pages**, pili
 - **TCC (Sijil Pematuhan Cukai)** diperbaharui setiap tahun. Sijil semasa luput 31/12/2026. Bila TCC baru dapat, semak ayat dalam `services.paragraph.4` masih tepat.
 - **MOF** sah hingga 14/10/2029. Tahun dalam `services.paragraph.4` ("hingga 2029") perlu dikemas kini bila diperbaharui.
 - Jangan letak dokumen asal (SSM, MOF, TCC) dalam repo ini: repo awam dan dokumen tersebut mengandungi maklumat peribadi.
+
+## Gambar
+
+- `img/hero-bufet.jpg`: gambar hero (dipasang dalam `IMAGES.heroBase`). Lapisan gelap atas gambar diatur dalam CSS bertanda "Gambar hero".
+- `img/makanan-packing.jpg`: latar kad projek "Makanan Packing".
+- Gambar dikecilkan (~1200px) dan data EXIF (termasuk lokasi GPS) dibuang sebelum dimasukkan. Buat perkara sama untuk gambar baru.
