@@ -48,3 +48,14 @@ Laman tidak memerlukan pemasangan atau build. Dalam **Settings → Pages**, pili
 - `img/event-utem.jpg`: latar kad projek "UTeM Melaka" (event sup daging 7,000 pax).
 - `img/makanan-packing.jpg`: latar kad projek "Makanan Packing".
 - Gambar dikecilkan (~1200px) dan data EXIF (termasuk lokasi GPS) dibuang sebelum dimasukkan. Buat perkara sama untuk gambar baru.
+
+## Warna dan font
+
+Ikut cadangan skill `ui-ux-pro-max` (Opensource-archive) untuk "Restaurant/Food Service". Token ada dalam blok CSS bertanda "Warna: ui-ux-pro-max".
+
+- Merah `#DC2626` (tajuk, aksen). Teks kecil atas latar terang guna `#B91C1C`, atas latar gelap guna `#F87171` supaya kontras cukup 4.5:1.
+- Emas `#A16207` untuk butang tindakan (CTA), teks putih.
+- Latar `#FEF2F2`, teks `#450A0A`, kad `#FFFFFF`, garisan `#FECACA`.
+- Font: **Playfair Display SC** untuk tajuk, **Karla** untuk teks biasa.
+
+Laman tidak lagi guna library Lenis (smooth scroll dari CDN). Dulu, kalau CDN tu gagal, seluruh JavaScript berhenti dan semua teks hilang.
